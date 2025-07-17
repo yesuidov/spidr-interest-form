@@ -1,6 +1,10 @@
+import phoneInput from './PhoneInput';
+import pinInput from './PinInput';
 import './InterestForm.css';
 
 const InterestForm = () => {
+  const { value: phoneValue, onChange: handlePhoneChange } = phoneInput();
+  const { value: pinValue, onChange: handlePinChange } = pinInput();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,7 +22,7 @@ const InterestForm = () => {
     <div className="form-container">
       <div className="form-header">
         <h2>Join the Waiting List</h2>
-        <p>Be the first to know when the Spidr Air Fryer drops.</p>
+        <p>Be the first to know when the <strong>Spidr Air Fryer</strong> drops.</p>
       </div>
 
       <form onSubmit={handleSubmit} className="spidr-form" noValidate>
@@ -40,6 +44,8 @@ const InterestForm = () => {
             id="phone"
             name="phone"
             placeholder="(630) 383-2070"
+            value={phoneValue}
+            onChange={handlePhoneChange}
             maxLength="14"
             required
           />
@@ -65,6 +71,8 @@ const InterestForm = () => {
               id="spidrPin"
               name="spidrPin"
               placeholder="####-####-####-####"
+              value={pinValue}
+              onChange={handlePinChange}
               maxLength="19"
               required
             />
