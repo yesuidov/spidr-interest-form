@@ -9,7 +9,7 @@ This React app features a custom interest form, designed for a hypothetical prod
 
 ## 📸 Demo
 
-![Project Demo](https://yesuidov.github.io/spidr-interest-form/)
+[Project Demo](https://yesuidov.github.io/spidr-interest-form/)
 
 ---
 
