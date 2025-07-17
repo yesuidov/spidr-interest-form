@@ -1,0 +1,14 @@
+.form-wrapper {
+  position: relative;
+  max-width: 650px;
+  margin: 2rem auto;
+}
+
+.corner-image-outside {
+  position: absolute;
+  top: -65px;
+  right: 800px;
+  width: 150px;
+  opacity: 0.8;
+  pointer-events: none;
+}
