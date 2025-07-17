@@ -1,0 +1,111 @@
+.form-container {
+  background-color: var(--spidr-gray-dark);
+  padding: 2.5rem;
+  max-width: 650px;
+  margin: 2rem auto;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.form-header h2 {
+  color: var(--spidr-blue);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0.67em 0px;
+  position: relative;
+  padding-bottom: 1rem; 
+}
+
+.form-header p {
+  color: var(--spidr-gray-light);
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.required-asterisk {
+  color: #a22834;
+  margin-left: 2px;
+}
+
+.spidr-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: var(--spidr-gray-light);
+}
+
+.form-group input, 
+.input-with-prefix {
+  background-color: var(--spidr-black);
+  border: 1px solid var(--spidr-gray-dark);
+  color: var(--spidr-white);
+  padding: 0.875rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s ease
+}
+
+/* On focus, highlight the border with the brand's blue color */
+.form-group input:focus,
+.input-with-prefix:focus-within {
+  outline: none;
+  border-color: var(--spidr-blue);
+}
+
+/* Style the dollar sign prefix for the cost input */
+.input-with-prefix {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-prefix span {
+  color: var(--spidr-gray-light);
+  padding-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.input-with-prefix input {
+  border: none;
+  padding: 0;
+  flex-grow: 1;
+  background: transparent;
+}
+
+/* Hide number input spinners for a cleaner look */
+input[type=number] { -moz-appearance: textfield; }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.submit-btn {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 12px 24px;
+  cursor: pointer;
+  color: var(--spidr-white);
+  border: 1px solid var(--spidr-white);
+}
