@@ -23,6 +23,18 @@
   padding-bottom: 1rem; 
 }
 
+/* Timeline */
+.form-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;    
+  height: 5%;
+  background-color: var(--spidr-blue);
+}
+
 .form-header p {
   color: var(--spidr-gray-light);
   margin-top: 10px;
